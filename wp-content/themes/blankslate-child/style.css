@@ -11,11 +11,42 @@ Updated: 2024-01-12 16:30:52
 
 */
 
-#header 
-{
- 
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+#header {
+  display: flex;
+  width: 100%;
+
+  justify-content: space-around;
+
+  height: 80px;
+  align-items: center;
+  padding-right: 77px;
+}
+
+#header ul {
+  display: flex;
+  gap: 20px;
+  padding-right: 23px;
+}
+
+.logo {
+  width: 300px;
+}
+
+
+.nav_button_margin {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.nous_rencontrer {
+
+  display: flex ;
+  flex-direction: column;
+
+  align-items: center;
 
 }
+
+
+
+
