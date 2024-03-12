@@ -15,23 +15,28 @@ Updated: 2024-01-12 16:30:52
   display: flex;
   width: 100%;
 
-  justify-content: space-around;
+  justify-content: space-between;
 
   height: 80px;
   align-items: center;
-  padding-right: 77px;
+
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
 #header ul {
   display: flex;
   gap: 20px;
-  padding-right: 23px;
+ 
+  align-items: center;
+  height: 80px;
 }
 
 .logo {
   width: 300px;
 }
-
 
 .nav_button_margin {
   margin-left: 60px;
@@ -39,14 +44,36 @@ Updated: 2024-01-12 16:30:52
 }
 
 .nous_rencontrer {
-
-  display: flex ;
+  display: flex;
   flex-direction: column;
 
   align-items: center;
-
 }
 
+.nous_rencontrer label {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.seb_name {
+  height: 71px;
+  width: 383px;
+  border-radius: 7px !important;
+  margin-bottom: 10px;
+}
 
+.seb_message {
+  height: 237px;
+  width: 383px;
+  border-radius: 7px !important;
+}
 
+#menu-item-86 {
+  background-color: #e0b9b4;
+  height: 100%;
 
+  display: flex;
+  align-items: center;
+  width: 170px;
+  justify-content: space-around;
+}
