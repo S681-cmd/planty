@@ -21,4 +21,24 @@ if ( !function_exists( 'chld_thm_cfg_parent_css' ) ):
 endif;
 add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
+// Fonction pour ajouter le lien "Admin" dans le menu à la deuxième place
+function custom_menu_link($items, $args) {
+    // Vérifie si l'utilisateur est connecté
+    if (is_user_logged_in()) {
+        // Crée le lien vers la page d'administration
+        $admin_link = '<li><a href="' . admin_url() . '">Admin</a></li>';
+
+        // Divise les éléments du menu en un tableau
+        $menu_items = explode('</li>', $items);
+
+        // Insère le lien "Admin" à la deuxième position dans le tableau
+        array_splice($menu_items, 1, 0, $admin_link);
+
+        // Réassemble les éléments du menu en une chaîne
+        $items = implode('</li>', $menu_items);
+    }
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'custom_menu_link', 10, 2);
+
 // END ENQUEUE PARENT ACTION

@@ -19,7 +19,6 @@ Updated: 2024-01-12 16:30:52
 
   height: 80px;
   align-items: center;
-
 }
 
 a {
@@ -29,7 +28,7 @@ a {
 #header ul {
   display: flex;
   gap: 20px;
- 
+
   align-items: center;
   height: 80px;
 }
@@ -76,4 +75,47 @@ a {
   align-items: center;
   width: 170px;
   justify-content: space-around;
+}
+
+.commander_quantity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.number_1 {
+  border: red 1px solid;
+}
+
+.info_commande {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+}
+
+.bouton_envoyer_commander {
+  display: flex;
+  justify-content: center;
+}
+
+.bouton_commande {
+  width: 100%;
+  height: 55px;
+}
+
+.bouton_envoyer_commander p {
+  width: 198px;
+}
+
+.barre{
+height: 100px;
+width: 1px;
+background-color: white;
+}
+
+.entry-title {
+  display: none !important; 
 }
